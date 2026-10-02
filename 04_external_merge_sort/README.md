@@ -1,0 +1,2 @@
+# External Merge Sort for Large Datasets
+A C++ project that implements external sorting for datasets that are too large to fit entirely into RAM. The input file is split into fixed-size chunks, each chunk is sorted in memory using a custom recursive Merge Sort implementation, and the sorted chunks are written to temporary files stored on disk rather than kept in memory. The implementation uses a custom thread pool to parallelize chunk sorting and file merging, while execution time is measured with std::chrono::steady_clock for several number of threads.
